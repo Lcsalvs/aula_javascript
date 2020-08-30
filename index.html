@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha página</title>
     <!--<script src="./js/main.js"></script> -->
-    <script src="./js/funcoes.js"></script>
+    <!--<script src="./js/funcoes.js"></script> -->
+    <script src="./js/elements.js"></script>
 </head>
-<body>
-    
+<body onload="load()">
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <h3 id="agradecimento" onclick="redirecionar()"></h3>
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+    <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+
+    <select onchange="mudar(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
 </body>
 </html>
